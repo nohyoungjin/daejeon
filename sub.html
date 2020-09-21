@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width">
+	<title>대전창조경제혁신센터</title>
+	<link href="css/common.css" rel="stylesheet" />    
+	<link href="css/sub.css" rel="stylesheet" />
+	<link href="css/board.css" rel="stylesheet" />
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body class="page">
+
+	<!-- 스킵네비게이션 -->
+
+	<ul id="skip-navi">   
+		<li><a href="#content">본문 바로가기</a></li>    
+	</ul>
+
+	<!-- wrap -->
+
+    <div class="wrap">
+		<div id="header">
+
+			<!-- GNB 메뉴 -->
+
+			<div class="h_group">
+
+				<div>
+					<h1>
+						<a href="index.html"><img src="img/logo.png" alt="기술사업화 Market Place" /></a>
+					</h1>
+					<div id="gnb">
+						<button class="btn_menu" type="button">전체메뉴 열기</button>
+						<div class="box">
+                            <button class="btn_close" type="button">전체메뉴 닫기</button>
+							<ul>
+								<li><a href="#"><span>서비스안내</span><span class="gnb_border"></span></a>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul>
+												<li><a href="sub.html"><span>기술사업화MP 소개</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="#"><span>기술이전</span><span class="gnb_border"></span></a>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul>
+												<li><a href="sub.html"><span>유망기술 검색</span></a></li>
+												<li><a href="sub.html"><span>수요기술 이전</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li id="current"><a href="#"><span>SK사업제안</span><span class="gnb_border"></span></a>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul>
+												<li><a href="#"><span>사업 및 서비스제안</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="#"><span>벤처기업정보</span><span class="gnb_border"></span></a>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul>
+												<li><a href="#"><span>SK지원벤처 소개</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="#"><span>대전창조포럼</span><span class="gnb_border"></span></a>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul>
+												<li><a href="#"><span>포럼발표 신청</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="#"><span>커뮤니티</span><span class="gnb_border"></span></a>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul>
+												<li><a href="#"><span>공지사항</span></a></li>
+												<li><a href="#"><span>Tech News</span></a></li>
+												<li><a href="#"><span>나의 등록정보</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="util-menu">
+							<div class="keyword">
+								<form name="" action="" method="post">
+									<fieldset>
+										<legend>검색</legend>
+										<input type="text" placeholder="검색어를 입력하세요" title="검색어를 입력하세요">
+										<a href="javascript:" class="util"><span class="icon ico_zoom">검색</span></a>
+										<a href="javascript:" class="btn-cl-search"><span>검색 닫기</span></a>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+        <div class="container">
+            <div class="content" id="content">
+
+				<div class="sub"><span class="m-hide">벤처기업정보</span></div>
+
+				<div class="path">
+					<ul>
+						<li class="home"><a href="#" title="홈"><span class="icon home"><span class="blind">home</span></span></a></li>
+						<li><a href="#">벤처기업정보</a></li>
+						<li>기술사업화 MP 소개</li>			
+					</ul>
+				</div>
+
+				<div class="sect">
+				
+					<div class="spot">
+						<h2>SK지원벤처 소개</h2>
+						<p>우수 아이디어 및 사업에 대한 창조경제혁신센터의 다양한 자원과 사업화 추진 등의 사례를 소개합니다.</p>
+					</div>
+
+					<div class="boardList">
+
+						<div class="searchWrap">
+							<div class="searchType">
+								<select class="selectBox" id="field" name="field" title="검색 조건">
+									<option selected="selected" value="all">전체</option>
+									<option value="content_title">제목</option>
+									<option value="content_author">작성자</option>
+								</select>
+								<input type="text" class="inputSearchBox" id="key" name="key" title="검색어 입력" placeholder="검색어를 입력하세요.">
+								<input class="searchBtn" name="submit" type="submit" value="검색">
+							</div>
+						</div>
+
+						<div class="box01">
+							<table summary="SK지원벤처 소개 리스트(번호, 창업아이템, 회사로 구성)">
+								<caption>SK지원벤처 소개 리스트</caption>
+								<thead>
+									<tr>
+										<th scope="col" class="list-uid">번호</th>
+										<th scope="col">창업아이템</th>
+										<th scope="col" class="list-user">회사</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>10</td>
+										<td class="title"><a href="javascript:">ICT 기반의 저전력 담보물 감시 단말기 및 빅데이터 관리 서버 개발</a></td>
+										<td class="list-user">
+											<ul>
+												<li>(주)더에스</li>
+												<li>070-7864-2690</li>
+												<li>help@happyict.co.kr</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td class="title"><a href="javascript:">주행데이터 기반 스마트 운전 도우미 솔루션</a></td>
+										<td class="list-user">
+											<ul>
+												<li>(주)더에스</li>
+												<li>070-7864-2690</li>
+												<li>help@happyict.co.kr</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<!-- //게시물이 없을 경우  -->
+							
+							<!-- <div class="noContent">해당 게시판의 글이 존재하지 않습니다.</div> -->
+
+						</div>
+
+						<div class="paginate">
+							<a href="#" class="icon prev">이전</a>
+							<a href="#" class="on">1</a>
+							<a href="#">2</a>
+							<a href="#" class="icon next">다음</a>
+						</div>
+
+					</div>
+
+				</div>
+
+            </div>
+        </div>
+
+		<!-- footer -->
+
+		<div class="footer">
+			<div class="footer-wrap clear">
+				<div class="f_both">
+					<div class="l_logo"><a href="#"><img src="./img/footer_logo.png" alt="대전창조경제혁신센터"></a></div>
+					<div class="info">
+						<p>대전광역시 유성구 대학로 291 KAIST 나노종합기술원 9층</p>
+						<ul class="add">
+							<li>TEL : <a href="tel:042-385-0532">042-385-0532</a><span class="bar"></span></li>
+							<li>E-Mail : skdd@sk.com</li>
+						</ul>
+						<p>COPYRIGHT (재)대전창조경제혁신센터 ALL RIGHTS RESERVED.</p>
+					</div>
+				</div>
+				<div class="r_logo"><a href="#"><img src="./img/sk.png" alt="SK"></a></div>			
+			</div>
+        </div>
+		
+		<!-- //footer -->
+   
+	</div>
+
+	<!-- //wrap -->
+
+</body>
+</html>

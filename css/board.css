@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* 검색 */
+
+.searchWrap {width:100%;margin:0 0 30px;padding:10px 0;background-color:#eee}
+.searchType {text-align:center}
+.selectBox {width:130px;height:32px;border:1px solid #ccc;font-size:15px;color:#555}
+.inputSearchBox {width:72%;height:32px;margin:0px 2px;padding:0px 5px;border:1px solid #ccc;font-size:14px;color:#555}
+.searchBtn {width:60px;height:32px;border:1px solid #737373;background-color:#737373;font-size:14px;color:#fff;text-align:center}
+
+/* 페이징 */
+
+.paginate {overflow:hidden;margin:30px 0 60px;text-align:center} 
+
+.paginate a {display:inline-block;width:33px;height:33px;font-size:13px;line-height:33px;text-align:center;transition:all 0.3s} 
+.paginate a.on, 
+.paginate a:hover {background-color:#e4403f;color:#fff} 
+
+.paginate a.prev, 
+.paginate a.next {margin:0 10px;border:0;text-indent:-9999px}  
+
+.paginate a.prev {width:8px;height:7px;background-position:0 -50px} 
+.paginate a.next {width:8px;height:7px;background-position:-10px -50px} 
+
+.paginate a.prev:hover, 
+.paginate a.next:hover {background-color:transparent;color:#fff} 
+
+/* 게시판 리스트 */
+
+.boardList {position:relative;margin:0 auto;padding:20px 25px 0}
+.boardList .box01 table {table-layout:fixed;width:100%}
+.boardList .box01 table tr th {padding:12px 0;border-bottom:1px solid #ddd;background-color:#e5e5e5;font-size:12px;font-weight:700}
+
+.boardList .box01 table tr td {padding:15px 0;border-bottom:1px solid #ddd;text-align:center;font-size:12px}
+.boardList .box01 table tr td.title {overflow:hidden;padding:0 0 0 60px;text-align:left;text-overflow:ellipsis;white-space:nowrap}
+.boardList .box01 table tr td a:hover,
+.boardList .box01 table tr td a:focus {color:#0f5185}
+
+.boardList .box01 table tr th.list-uid {width:80px}
+.list-user {width:150px}
+
+.boardList .box01 ul li {padding:0 0 2px 18px;text-align:left}
+.boardList .box01 ul li + li {background:url(../img/tel.png) no-repeat 0 2px}
+.boardList .box01 ul li + li + li {background:url(../img/email.png) no-repeat 0 5px}
+
+.boardList .noContent {margin:10px 0 0;padding:80px 0;border-top:1px solid #b2b2b2;border-bottom:1px solid #b2b2b2;font-size:20px;text-align:center}
+
+/* */
+
+@media (max-width: 1200px) {
+
+	.sect {width:100%}
+
+	.searchWrap {width:100%}
+	.searchType {width:300px;margin:0 auto;text-align:center}
+	
+	.selectBox {width:78px}
+	.inputSearchBox {width:128px}
+
+	.boardList .box01 table tr td.title {padding:0}
+
+	/* 게시판 리스트 */
+	
+	.list-user {display:none;width:auto}
+
+}
