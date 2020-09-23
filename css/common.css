@@ -1,60 +1,16 @@
 @charset "utf-8";
 
-@font-face{
-	font-family:"NanumBarunGothic";
-    font-style:normal;
-    font-weight:300;
-	src: url('font/NanumBarunGothicLight.eot');
-  	src: url(font/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'), 
-        url('font/NanumBarunGothicLight.woff') format('woff'),
-        url('font/NanumBarunGothicLight.ttf') format('truetype');
-}
+@import url("font.css");
+@import url("reset.css");
 
-@font-face{
-	font-family:"NanumBarunGothic";
-    font-style:normal;
-    font-weight:400;
-	src: url('font/NanumBarunGothic.eot');
-  	src: url(font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'), 
-        url('font/NanumBarunGothic.woff') format('woff'),
-        url('font/NanumBarunGothic.ttf') format('truetype');
-}
-
-@font-face{
-	font-family:"NanumBarunGothic";
-    font-style:normal;
-    font-weight:700;
-	src: url('font/NanumBarunGothicBold.eot');
-  	src: url(font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'), 
-        url('font/NanumBarunGothicBold.woff') format('woff'),
-        url('font/NanumBarunGothicBold.ttf') format('truetype');
-}
-
-/* RESET */
-
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
-fieldset,img {border:0 none}
-dl,ul,ol,menu,li {list-style:none}
-blockquote, q {quotes:none}
-blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
-input,select,textarea,button {vertical-align:middle;box-sizing:border-box}
-button {border:0 none;background-color:transparent;cursor:pointer}
-table {border-collapse:collapse;border-spacing:0}
-td,th {padding:0}
-
-body {background:#fff}
-body,th,td,input,select,textarea,button {font-family:'NanumBarunGothic','Nanum Gothic','Malgun Gothic',dotum,gulim;font-size:13px;font-weight:400;font-style:normal;color:#333;line-height:1.5} 
-a {color:#333;text-decoration:none}
-address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
-
-/* LAYOUT */
+/* layout */
 
 html, body {width:100%;height:100%}
 .wrap {width:100%;height:100%}
 .header {position:relative;min-width:1200px;height:130px}
 .container {width:100%}
 
-/* UNDER iE6 */
+/* under ie6 */
 
 *html .container {height:100%} 
 .content {padding:0}
@@ -63,14 +19,14 @@ html, body {width:100%;height:100%}
 .section:after {content:"";clear:both}
 .footer {position:relative}
 
-/* COMMON */
+/* global */
 
 legend, caption {display:none;width:0;height:0;font-size:0;line-height:0}
 .clear:before, 
 .clear:after {content:" ";display:table;clear:both}
-.blind {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0.1em;line-height:0.01em;text-indent:-9999px}
+.blind {overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0)}
 
-/* 스킵네비게이션 */
+/* skip */
 
 #skip-navi {height:0}
 #skip-navi a {position:absolute;top:-9999px;z-index:10000;width:100%;height:30px;background-color:#000;font-weight:600;color:#fff;text-align:center;line-height:30px;opacity:0.6;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter:alpha(opacity=60)}        
@@ -80,7 +36,7 @@ legend, caption {display:none;width:0;height:0;font-size:0;line-height:0}
 
 #header {position:fixed;top:0px;left:0px;z-index:100;width:100%}
 
-/* 주메뉴(gnb) */
+/* header */
 
 #header .h_group {overflow:visible;position:absolute;left:0px;z-index:100;width:100%;height:90px;background:rgba(0, 0, 0, .65)}
 #header .h_group.on:before {content:"";position:absolute;top:90px;left:0px;width:100%;height:1px;background-color:#585d66}
@@ -120,7 +76,7 @@ legend, caption {display:none;width:0;height:0;font-size:0;line-height:0}
 .gnb_border {position:absolute;top:66px;left:57px;width:0;height:3px;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out}
 #gnb > .box > ul > li.on > a > .gnb_border {left:0px !important;width:100%;padding:0;background:#52b2f5}
 
-/* 검색 */
+/* search */
 
 #header .util-menu {position:absolute;top:34px;right:0;z-index:10}
 #header .util-menu .util span {display:block;width:21px;height:21px;font-size:12px;color:transparent;text-indent:-9999px}
@@ -142,7 +98,7 @@ legend, caption {display:none;width:0;height:0;font-size:0;line-height:0}
 #header .util-menu .keyword.show .util {-webkit-transform:translateX(0px);transform:translateX(0px);opacity:1}
 #header .util-menu .keyword.show input {width:145px}
 
-/* 푸터 */
+/* footer */
 
 .footer {padding:30px 0 30px;background-color:#f6f6f6;color:#9a9a9a}
 .footer-wrap {position:relative;max-width:1200px;margin:0 auto}
@@ -219,7 +175,7 @@ legend, caption {display:none;width:0;height:0;font-size:0;line-height:0}
 
 	.container {min-width:100%}
 
-	/* 푸터 */
+	/* footer */
 
 	.footer-wrap {width:100%}
 	.footer-wrap .l_logo {float:none;padding:0 0 10px;text-align:center}

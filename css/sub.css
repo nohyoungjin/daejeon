@@ -11,7 +11,7 @@
 
 .sect {overflow:hidden;width:930px;margin:0 auto}
 
-/* 브레드크럼 */
+/* path */
 
 .path {max-width:2000px;height:50px;margin:0 auto;border-top:1px solid #1f72bc;border-bottom:1px solid #1f72bc;background-color:#0b65b6}
 .path ul {max-width:930px;margin:0 auto}
