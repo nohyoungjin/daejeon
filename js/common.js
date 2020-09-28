@@ -12,7 +12,7 @@ $(function(){
 
 	// WINDOW RESIZE FUNCTION
 
-	$(window).resize( function() {
+	$(window).resize(function() {
 	
 		$.fn.device();
 		$.fn.gnbSize();
@@ -38,18 +38,18 @@ $(function(){
 		});
 
 		$("#gnb").on("mouseenter", "> .box > ul > li", function() {
-			if($("body").data("device") != "mobile") {
+			if ($("body").data("device") != "mobile") {
 				$(".h_group").addClass("on");
 				// $(this).css("height","320px");
-				$(this).parents(".h_group").stop().animate({"height":"300px"}, 300);
+				$(this).parents(".h_group").stop().animate({"height": "300px"}, 300);
 				$("#gnb .sub_menu").show();
 			}
 		});
 
 		$(".h_group").on("mouseleave", function() {
-			if($("body").data("device") != "mobile") {
+			if ($("body").data("device") != "mobile") {
 				$("#gnb > .box > ul > li").css("height","auto");
-				$("#gnb > .box > ul > li").parents(".h_group").stop().animate({"height":"90px"}, 300, function() {
+				$("#gnb > .box > ul > li").parents(".h_group").stop().animate({"height": "90px"}, 300, function() {
 					$("#gnb > .box > ul > li").siblings().children(".sub_menu").hide();
 					$(".h_group").removeClass("on");
 				});
@@ -59,18 +59,18 @@ $(function(){
 		// GNB 키보드 접근
 		
 		$("#gnb").on("focusin", "> .box > ul > li > a", function() {
-			if($("body").data("device") != "mobile") {
-				if($(".h_group").hasClass("on") == false) {
+			if ($("body").data("device") != "mobile") {
+				if ($(".h_group").hasClass("on") == false) {
 					// $(this).css("height","320px");
-					$(this).parents(".h_group").stop().animate({"height":"300px"}, 300);
+					$(this).parents(".h_group").stop().animate({"height": "300px"}, 300);
 					$("#gnb .sub_menu").show();
 				}
 			}
 		}); 
 
 		$(document).on('focus', '.util', function() {
-			if($("body").data("device") != "mobile") {
-				$("#gnb > .box > ul > li").parents(".h_group").stop().animate({"height":"90px"}, 300, function() {
+			if ($("body").data("device") != "mobile") {
+				$("#gnb > .box > ul > li").parents(".h_group").stop().animate({"height": "90px"}, 300, function() {
 					$("#gnb > .box > ul > li").siblings().children(".sub_menu").hide();
 				});
 			}
@@ -87,15 +87,15 @@ $(function(){
 			var overflowChk = $("body").css("overflow");
 			var deviceHeight = $(window).height();
 
-			if(overflowChk == "hidden") {
+			if (overflowChk == "hidden") {
 				$("body").css({
-					"overflow":"visible",
-					"height":"auto"
+					"overflow": "visible",
+					"height": "auto"
 				});
 			} else {
 				$("body").css({
-					"overflow":"hidden",
-					"height":deviceHeight
+					"overflow": "hidden",
+					"height": deviceHeight
 				});
 			}
 
@@ -104,10 +104,10 @@ $(function(){
 		});
 
 		$("#gnb > .box").on("click", "> ul > li > a", function() {
-			if($("body").data("device") == "mobile") {
+			if ($("body").data("device") == "mobile") {
 				$("#gnb > .box > ul > li > .sub_menu > .inner > ul").filter(":not(:animated)").slideUp("fast");
 				$(this).parent().find("> .sub_menu > .inner > ul").filter(":not(:animated)").slideToggle();
-				if( $(this).parent().hasClass("current") ) {
+				if ($(this).parent().hasClass("current")) {
 					$(this).parent().removeClass("current");
 					return;
 				}
@@ -130,7 +130,7 @@ $(function(){
 		// 검색
 
 		$("#header .util-menu .keyword .util").click(function() {
-			if(!$(this).hasClass("on")) {
+			if (!$(this).hasClass("on")) {
 				$("#header .util-menu .keyword input").show();
 				$(this).addClass("on");
 				setTimeout(function() {
@@ -152,7 +152,7 @@ $(function(){
 
 	// HOME
 
-	if( $('body').hasClass('home') ) {
+	if ($('body').hasClass('home')) {
 
 		// 메인 슬라이드
 
@@ -170,7 +170,7 @@ $(function(){
 
 		$('.btn_play').on('click', function() {
 			var $pauseBtn = $(this);
-			if($pauseBtn.hasClass('on')) {
+			if ($pauseBtn.hasClass('on')) {
 				$(".visual").slick('slickPlay');
 				$(this).text("시작");
 				$pauseBtn.removeClass('on');
@@ -228,7 +228,7 @@ $.fn.device = function() {
 
 	var size = $(window).width() + 17; // 스크롤바 width 추가
 		
-	if(size <= 1200) {
+	if (size <= 1200) {
 		$("body").data("device","mobile");
 	} else {
 		$("body").data("device","pc");
@@ -243,12 +243,12 @@ $.fn.gnbSize = function() {
 	var deviceWidth = $(window).width();
 	var deviceHeight = $(window).height();
 	
-	if($("body").data("device") == "mobile") {
+	if ($("body").data("device") == "mobile") {
 
 		$("body").css("overflow","visible");
 		$("#gnb > .box").css({
-			"height":deviceHeight,
-			"background":"#424242"
+			"height": deviceHeight,
+			"background": "#424242"
 		});
 		$("#gnb .sub_menu").show();
 		$("#gnb .sub_menu ul").hide();
@@ -260,8 +260,8 @@ $.fn.gnbSize = function() {
 
 		$("body").css("overflow","visible");
 		$("#gnb > div.box").css({
-			"height":"auto",
-			"background":"none"
+			"height": "auto",
+			"background": "none"
 		});
 		$("#gnb > div.box").css("right","-80%");
 		$("#gnb > div.box > ul > li").removeClass("current");
