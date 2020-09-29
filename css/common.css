@@ -5,7 +5,9 @@
 
 /* layout */
 
-html, body {width:100%;height:100%}
+html {font-size:62.5%;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Apple Gothic', sans-serif;font-size:13px;font-weight:400;color:#333;line-height:1.5;word-break:keep-all}
+
 #wrap {width:100%;height:100%}
 #container {width:100%}
 
@@ -14,13 +16,9 @@ html, body {width:100%;height:100%}
 *html #container {height:100%} 
 .content {padding:0}
 .section {overflow:hidden;max-width:1200px;margin:0 auto}
-#footer {position:relative}
 
-/* global */
+/* blind */
 
-legend, caption {display:none;width:0;height:0;font-size:0;line-height:0}
-.clear:before, 
-.clear:after {content:" ";display:table;clear:both}
 .blind {overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0)}
 
 /* skip */
@@ -97,7 +95,7 @@ legend, caption {display:none;width:0;height:0;font-size:0;line-height:0}
 
 /* footer */
 
-#footer {padding:30px 0 30px;background-color:#f6f6f6;color:#9a9a9a}
+#footer {position:relative;padding:30px 0 30px;background-color:#f6f6f6;color:#9a9a9a}
 .footer-wrap {position:relative;max-width:1200px;margin:0 auto}
 
 .footer-wrap .f_both {display:block;clear:both;content:''}
