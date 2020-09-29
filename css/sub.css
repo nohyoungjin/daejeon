@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.icon {display:inline-block;vertical-align:middle;background:url(../img/icon_all.png) no-repeat 0 0}
+.icon {display:inline-block;vertical-align:middle;background:url(../img/common/icon_all.png) no-repeat 0 0}
 .icon.home {width:17px;height:15px;background-position:0 -300px}
 
 .sub {width:100%;max-width:2000px;height:129px;margin:0 auto;padding:154px 0 0;background:url(../img/visual_1.png) no-repeat center top;font-size:46px;color:#fff;text-align:center;-webkit-background-size:cover;background-size:cover}

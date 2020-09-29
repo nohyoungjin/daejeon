@@ -40,8 +40,8 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 #header .h_group > div h1 {overflow:hidden;float:left;padding:25px 0 0}
 
 #gnb {position:relative;float:right;padding:23px 45px 0 0}
-#gnb .btn_menu {display:none;overflow:hidden;position:absolute;top:34px;right:20px;width:24px;height:17px;background:url(../img/btn_menu.png) no-repeat;text-indent:-999em}
-#gnb .btn_close {display:none;overflow:hidden;position:absolute;top:10px;right:23px;width:16px;height:16px;background:url(../img/btn_x.png) no-repeat;text-indent:-999em}
+#gnb .btn_menu {display:none;overflow:hidden;position:absolute;top:34px;right:20px;width:24px;height:17px;background:url(../img/common/btn_menu.png) no-repeat;text-indent:-999em}
+#gnb .btn_close {display:none;overflow:hidden;position:absolute;top:10px;right:23px;width:16px;height:16px;background:url(../img/common/btn_x.png) no-repeat;text-indent:-999em}
 
 #gnb > .box > ul {/* overflow:hidden */}
 #gnb > .box > ul:after {display:block;clear:both;content:''}
@@ -75,11 +75,11 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 
 #header .util-menu {position:absolute;top:34px;right:0;z-index:10}
 #header .util-menu .util span {display:block;width:21px;height:21px;font-size:12px;color:transparent;text-indent:-9999px}
-.icon {display:inline-block;vertical-align:middle;background:url(../img/icon_all.png) no-repeat 0 0}
+.icon {display:inline-block;vertical-align:middle;background:url(../img/common/icon_all.png) no-repeat 0 0}
 .icon.ico_zoom {background-position:0 -250px}
 
 #header .util-menu .btn-cl-search {display:none;position:absolute;right:0;top:0;opacity:0}
-#header .util-menu .btn-cl-search span {display:block;width:18px;height:18px;background:url(../img/btn_close.png) center center no-repeat;font-size:12px;color:transparent;text-indent:-9999px}
+#header .util-menu .btn-cl-search span {display:block;width:18px;height:18px;background:url(../img/common/btn_close.png) center center no-repeat;font-size:12px;color:transparent;text-indent:-9999px}
 
 #header .util-menu a, 
 #header .util-menu .keyword, 
@@ -137,8 +137,8 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 	#gnb > .box > ul > li:first-child {border-top:1px solid #555}
 	#gnb > .box > ul > li > a {padding:15px 24px;background:#424242}
 
-	#gnb > .box > ul > li > a span {padding-bottom:0px;background:url(../img/bul_down.gif) no-repeat 100% 8px;color:#fdfdfd}
-	#gnb > .box > ul > li.current > a span {padding:0;border-bottom:0;background:url(../img/bul_up.gif) no-repeat 100% 8px;color:#fdfdfd}
+	#gnb > .box > ul > li > a span {padding-bottom:0px;background:url(../img/common/bu_down.gif) no-repeat 100% 8px;color:#fdfdfd}
+	#gnb > .box > ul > li.current > a span {padding:0;border-bottom:0;background:url(../img/common/bu_up.gif) no-repeat 100% 8px;color:#fdfdfd}
 	#gnb > .box > ul > li > a:hover span,
 	#gnb > .box > ul > li > a:focus span {padding:0;border-bottom:0;color:#fdfdfd}
 

@@ -26,10 +26,10 @@
 .visual .slick-track {overflow:hidden}
 .visual .slick-track div {height:697px}
 
-.visual div.d_01 {background:url(../img/visual_01.png) repeat 50% 50%}
-.visual div.d_02 {background:url(../img/visual_02.png) repeat 50% 50%}
-.visual div.d_03 {background:url(../img/visual_03.png) repeat 50% 50%}
-.visual div.d_04 {background:url(../img/visual_01.png) repeat 50% 50%}
+.visual div.d_01 {background:url(../img/main/visual_01.png) repeat 50% 50%}
+.visual div.d_02 {background:url(../img/main/visual_02.png) repeat 50% 50%}
+.visual div.d_03 {background:url(../img/main/visual_03.png) repeat 50% 50%}
+.visual div.d_04 {background:url(../img/main/visual_01.png) repeat 50% 50%}
 
 .message {width:1200px;margin:0 auto}
 .message p.tit {margin:240px 0 0 0;font-size:56px;font-weight:300;line-height:60px;color:#fff}  
@@ -61,8 +61,8 @@
 .visual .slick-dots li.slick-active span {width:22px;height:10px;background:#e64053}
 
 .visual_btn {position:relative;width:1026px;bottom:141px;z-index:10;margin:0 auto}
-.btn_play {display:block;overflow:hidden;width:15px;height:17px;background:url(../img/btn_pause.png) no-repeat center;text-indent:-9999px;cursor:pointer}
-.btn_play.on {background:url(../img/btn_play.png) no-repeat center}
+.btn_play {display:block;overflow:hidden;width:15px;height:17px;background:url(../img/common/btn_pause.png) no-repeat center;text-indent:-9999px;cursor:pointer}
+.btn_play.on {background:url(../img/common/btn_play.png) no-repeat center}
 
 /* */
 
@@ -78,8 +78,8 @@
 .group .slick-dots li.slick-active span {background:#506c87}
 
 .group .slick-arrow {display:block;z-index:100;width:11px;height:16px;text-indent:-9999px;cursor:pointer}
-.group .slick-prev {position:absolute;top:24px;left:0px;background:url(../img/left.png) no-repeat 0 0}
-.group .slick-next {position:absolute;top:24px;right:0px;background:url(../img/right.png) no-repeat 0 0}
+.group .slick-prev {position:absolute;top:24px;left:0px;background:url(../img/common/left.png) no-repeat 0 0}
+.group .slick-next {position:absolute;top:24px;right:0px;background:url(../img/common/right.png) no-repeat 0 0}
 
 /* */
 
@@ -96,11 +96,11 @@
 
 /* 바로가기 */
 
-.short-cut {max-width:1200px;margin:0px auto;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+.short-cut {max-width:1200px;margin:0px auto}
 .short-cut ul:after {content:'.';display:block;clear:both;height:0;line-height:0;visibility:hidden}
-.short-cut ul li {float:left;width:10%;height:110px;padding:40px 0 0;background:url(../img/bar.png) 100% 38% no-repeat;text-align:center;cursor:pointer}
+.short-cut ul li {float:left;width:10%;height:110px;padding:40px 0 0;background:url(../img/common/bar.png) 100% 38% no-repeat;text-align:center;cursor:pointer}
 .short-cut ul li:last-child {background:none}
-.short-cut ul li a {position:relative;display:block;font-size:14px;color:#d3eaf4;transition:all 1.9s;-moz-box-sizing border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+.short-cut ul li a {position:relative;display:block;font-size:14px;color:#d3eaf4;transition:all 1.9s}
 .short-cut ul li a .txt {display:block;margin-top:10px}
 .short-cut ul li:hover a {top:-10px;color:#4edaef}
 
@@ -109,7 +109,7 @@
 .col_wrap {text-align:center}
 .col_wrap:after {display:block;clear:both;content:''}
 .col_wrap > .col:first-child {border-left:1px solid #eee}
-.col_wrap > .col {position:relative;float:left;width:33.3%;padding:40px 40px;border:1px solid #eee;border-left:0;color:#555;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+.col_wrap > .col {position:relative;float:left;width:33.3%;padding:40px 40px;border:1px solid #eee;border-left:0;color:#555}
 .col_wrap > .col > strong {display:block;padding:15px 0 10px;border-bottom:1px solid #f1f1f1;font-size:26px;font-weight:400;color:#111}
 
 .col_wrap > .col .more {position:absolute;top:30px;right:35px}
@@ -141,7 +141,7 @@
 
 	.row {width:100%;height:auto;margin:0}
 	.short-cut {width:100%}
-	.short-cut ul li {width:20%;height:130px;padding:25px 0;background:none;border-left:0;border-bottom:1px solid #4679a8;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+	.short-cut ul li {width:20%;height:130px;padding:25px 0;background:none;border-left:0;border-bottom:1px solid #4679a8}
 
 	.col_wrap > .col:first-child {border-top:1px solid #ddd}
 	.col_wrap > .col {width:100%;height:auto;border:1px solid #ddd;border-top:0}
