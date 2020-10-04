@@ -31,7 +31,7 @@
 .boardList .box01 table {table-layout:fixed;width:100%}
 .boardList .box01 table tr th {padding:12px 0;border-bottom:1px solid #ddd;background-color:#e5e5e5;font-size:12px;font-weight:700}
 
-.boardList .box01 table tr td {padding:15px 0;border-bottom:1px solid #ddd;text-align:center;font-size:12px}
+.boardList .box01 table tr td {padding:15px 0;border-bottom:1px solid #ddd;font-size:12px;text-align:center;vertical-align:middle}
 .boardList .box01 table tr td.title {overflow:hidden;padding:0 0 0 60px;text-align:left;text-overflow:ellipsis;white-space:nowrap}
 .boardList .box01 table tr td a:hover,
 .boardList .box01 table tr td a:focus {color:#0f5185}
@@ -40,8 +40,8 @@
 .list-user {width:150px}
 
 .boardList .box01 ul li {padding:0 0 2px 18px;text-align:left}
-.boardList .box01 ul li + li {background:url(../img/tel.png) no-repeat 0 2px}
-.boardList .box01 ul li + li + li {background:url(../img/email.png) no-repeat 0 5px}
+.boardList .box01 ul li + li {background:url(../img/content/tel.png) no-repeat 0 2px}
+.boardList .box01 ul li + li + li {background:url(../img/content/email.png) no-repeat 0 5px}
 
 .boardList .noContent {margin:10px 0 0;padding:80px 0;border-top:1px solid #b2b2b2;border-bottom:1px solid #b2b2b2;font-size:20px;text-align:center}
 
