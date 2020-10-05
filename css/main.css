@@ -1,21 +1,10 @@
 @charset "utf-8";
 
-/* */
+/* 
+SUMMARY :
 
-.ico.mp_01 {width:39px;height:39px;background-position:0 0}
-.ico.mp_02 {width:39px;height:39px;background-position:-40px 0}
-.ico.mp_03 {width:39px;height:39px;background-position:-80px 0}
-.ico.mp_04 {width:39px;height:39px;background-position:-120px 0}
-.ico.mp_05 {width:39px;height:39px;background-position:-160px 0}
-.ico.mp_06 {width:39px;height:39px;background-position:-200px 0}
-.ico.mp_07 {width:39px;height:39px;background-position:-240px 0}
-.ico.mp_08 {width:39px;height:39px;background-position:-280px 0}
-.ico.mp_09 {width:39px;height:39px;background-position:-320px 0}
-.ico.mp_10 {width:39px;height:39px;background-position:-360px 0}
-
-.ico.ico_news {width:119px;height:119px;background-position:0 -100px}
-.ico.ico_tech {width:119px;height:119px;background-position:-120px -100px}
-.ico.ico_notice {width:119px;height:119px;background-position:-240px -100px}
+01 VISUAL
+*/
 
 /* visual */
 
@@ -26,10 +15,10 @@
 .visual .slick-track {overflow:hidden}
 .visual .slick-track div {height:697px}
 
-.visual div.d_01 {background:url(../img/main/visual_01.png) repeat 50% 50%}
-.visual div.d_02 {background:url(../img/main/visual_02.png) repeat 50% 50%}
-.visual div.d_03 {background:url(../img/main/visual_03.png) repeat 50% 50%}
-.visual div.d_04 {background:url(../img/main/visual_01.png) repeat 50% 50%}
+.visual div.d_01 {background:url(../img/main/visual_01.jpg) repeat 50% 50%}
+.visual div.d_02 {background:url(../img/main/visual_02.jpg) repeat 50% 50%}
+.visual div.d_03 {background:url(../img/main/visual_03.jpg) repeat 50% 50%}
+.visual div.d_04 {background:url(../img/main/visual_01.jpg) repeat 50% 50%}
 
 .message {width:1200px;margin:0 auto}
 .message p.tit {margin:240px 0 0 0;font-size:56px;font-weight:300;line-height:60px;color:#fff}  
@@ -60,13 +49,14 @@
 .visual .slick-dots span {display:block;overflow:hidden;width:10px;height:10px;margin:0 7px 0 0;background:#fff;text-indent:-999px;cursor:pointer;border-radius:5px}
 .visual .slick-dots li.slick-active span {width:22px;height:10px;background:#e64053}
 
-.visual_btn {position:relative;width:1026px;bottom:141px;z-index:10;margin:0 auto}
+.visual_btn {position:relative;width:1060px;bottom:141px;z-index:10;margin:0 auto}
+
 .btn_play {display:block;overflow:hidden;width:15px;height:17px;background:url(../img/common/btn_pause.png) no-repeat center;text-indent:-9999px;cursor:pointer}
 .btn_play.on {background:url(../img/common/btn_play.png) no-repeat center}
 
 /* */
 
-.group {overflow:hidden;position:relative;z-index:10;max-width:1200px;padding:15px 0}
+.group {overflow:hidden;position:relative;z-index:10;max-width:1200px;margin:0 auto;padding:15px 0}
 .group .g_family {overflow:hidden;width:1140px;margin:0 auto}
 .group .slick-track:after {display:block;clear:both;content:''}
 
@@ -81,32 +71,37 @@
 .group .slick-prev {position:absolute;top:24px;left:0px;background:url(../img/common/left.png) no-repeat 0 0}
 .group .slick-next {position:absolute;top:24px;right:0px;background:url(../img/common/right.png) no-repeat 0 0}
 
-/* */
-
-.developers ul {position:fixed;top:314px;right:0;z-index:10000;width:118px;padding:12px 0;background:rgba(0, 0, 0, .5)}
-.developers ul li {position:relative;padding:7px 0;text-align:center}
-.developers ul li a {font-size:11px;color:#fff}
-.developers ul li a:before {content:'';position:absolute;top:32px;left:58px;width:4px;height:4px;margin-right:5px;background-color:#59636f}
-.developers ul li:last-child a:before {display:none}
-
-/* 바로가기 라인 */
+/* widget 라인 */
 
 .row {position:relative;z-index:51;width:100%;background-color:#0b65b6}
-.row:after {content:'.';display:block;clear:both;height:0;line-height:0;visibility:hidden}
+.row:after {display:block;clear:both;content:''}
 
-/* 바로가기 */
+/* widget */
 
-.short-cut {max-width:1200px;margin:0px auto}
-.short-cut ul:after {content:'.';display:block;clear:both;height:0;line-height:0;visibility:hidden}
-.short-cut ul li {float:left;width:10%;padding:30px 0;background:url(../img/common/bar.png) 100% 50% no-repeat;text-align:center;cursor:pointer}
-.short-cut ul li:last-child {background:none}
-.short-cut ul li a {position:relative;display:block;font-size:14px;color:#d3eaf4;transition:all 1.9s}
-.short-cut ul li a .txt {display:block;margin-top:10px}
-.short-cut ul li:hover a {top:-10px;color:#4edaef}
+.widget {max-width:1200px;margin:0px auto}
+.widget ul:after {display:block;clear:both;content:''}
+.widget ul li {float:left;width:10%;padding:30px 0;background:url(../img/common/bar.png) 100% 50% no-repeat;text-align:center;cursor:pointer}
+.widget ul li:last-child {background:none}
+.widget ul li a {position:relative;display:block;font-size:14px;color:#d3eaf4;transition:all 1.9s}
+.widget ul li a .txt {display:block;margin-top:10px}
+.widget ul li:hover a {top:-10px;color:#4edaef}
+
+/* */
+
+.ico.mp_01 {width:39px;height:39px;background-position:0 0}
+.ico.mp_02 {width:39px;height:39px;background-position:-40px 0}
+.ico.mp_03 {width:39px;height:39px;background-position:-80px 0}
+.ico.mp_04 {width:39px;height:39px;background-position:-120px 0}
+.ico.mp_05 {width:39px;height:39px;background-position:-160px 0}
+.ico.mp_06 {width:39px;height:39px;background-position:-200px 0}
+.ico.mp_07 {width:39px;height:39px;background-position:-240px 0}
+.ico.mp_08 {width:39px;height:39px;background-position:-280px 0}
+.ico.mp_09 {width:39px;height:39px;background-position:-320px 0}
+.ico.mp_10 {width:39px;height:39px;background-position:-360px 0}
 
 /* 메인 (3단) */
 
-.col_wrap {text-align:center}
+.col_wrap {max-width:1200px;margin:0 auto;text-align:center}
 .col_wrap:after {display:block;clear:both;content:''}
 .col_wrap > .col:first-child {border-left:1px solid #eee}
 .col_wrap > .col {position:relative;float:left;width:33.3%;padding:40px 40px;border:1px solid #eee;border-left:0;color:#555}
@@ -124,9 +119,23 @@
 
 .col_wrap > .col > ul > li .date {float:right;font-size:12px;color:#9a9a9a}
 
+.ico.ico_news {width:119px;height:119px;background-position:0 -100px}
+.ico.ico_tech {width:119px;height:119px;background-position:-120px -100px}
+.ico.ico_notice {width:119px;height:119px;background-position:-240px -100px}
+
+/* */
+
+.developers ul {position:fixed;top:314px;right:0;z-index:10000;width:118px;padding:12px 0;background:rgba(0, 0, 0, .5)}
+.developers ul li {position:relative;padding:7px 0;text-align:center}
+.developers ul li a {font-size:11px;color:#fff}
+.developers ul li a:before {content:'';position:absolute;top:32px;left:58px;width:4px;height:4px;margin-right:5px;background-color:#59636f}
+.developers ul li:last-child a:before {display:none}
+
 /* */
 
 @media (max-width: 1200px) {
+
+	/* visual */
 
 	.visual .slick-dots {width:auto}
 	.visual_btn {display:none}
@@ -140,8 +149,8 @@
 	.group .slick-next {right:10px}
 
 	.row {width:100%;height:auto;margin:0}
-	.short-cut {width:100%}
-	.short-cut ul li {width:20%;height:130px;padding:25px 0;background:none;border-left:0;border-bottom:1px solid #4679a8}
+	.widget {width:100%}
+	.widget ul li {width:20%;height:130px;padding:25px 0;background:none;border-left:0;border-bottom:1px solid #4679a8}
 
 	.col_wrap > .col:first-child {border-top:1px solid #ddd}
 	.col_wrap > .col {width:100%;height:auto;border:1px solid #ddd;border-top:0}
@@ -150,10 +159,14 @@
 
 	.col_wrap > .col > ul > li .title {display:inline-block;overflow:hidden;width:60%;text-overflow:ellipsis;white-space:nowrap}
 
+	/* */
+
+	.developers {display:none}
+
 }
 
 @media (max-width: 600px) {
 
-	.short-cut ul li {width:50%}
+	.widget ul li {width:50%}
 	
 }

@@ -3,6 +3,16 @@
 @import url("font.css");
 @import url("reset.css");
 
+/* 
+SUMMARY :
+
+01 LAYOUT
+02 HEADER
+03 FOOTER
+04 POPUP
+05 SCROLL TOP 
+*/
+
 /* layout */
 
 html {font-size:62.5%;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%}
@@ -15,11 +25,6 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 
 *html #container {height:100%} 
 .content {padding:0}
-.section {overflow:hidden;max-width:1200px;margin:0 auto}
-
-/* blind */
-
-.blind {overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0)}
 
 /* skip */
 
@@ -29,10 +34,17 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 #skip_navi a:focus, 
 #skip_navi a:active {top:0;color:#fff}
 
-#header {position:fixed;top:0px;left:0px;z-index:100;width:100%}
+/* blind */
+
+.blind {overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0)}
+
+/* ico */
+
+.ico {display:inline-block;background:url(../img/common/ico_all.png) no-repeat 0 0;background-repeat:no-repeat;vertical-align:middle}
 
 /* header */
 
+#header {position:fixed;top:0px;left:0px;z-index:100;width:100%}
 #header .h_group {overflow:visible;position:absolute;left:0px;z-index:100;width:100%;height:90px;background:rgba(0, 0, 0, .65)}
 #header .h_group.on:before {content:"";position:absolute;top:90px;left:0px;width:100%;height:1px;background-color:#585d66}
 #header .h_group > div {max-width:1200px;margin:0 auto}
@@ -76,9 +88,6 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 #header .util-menu {position:absolute;top:34px;right:0;z-index:10}
 #header .util-menu .util i {display:block;width:21px;height:21px;font-size:12px;color:transparent;text-indent:-9999px}
 
-/* ico */
-
-.ico {display:inline-block;background:url(../img/common/ico_all.png) no-repeat 0 0;vertical-align:middle}
 .ico.ico_zoom {background-position:0 -250px}
 
 #header .util-menu .btn-cl-search {display:none;position:absolute;right:0;top:0;opacity:0}
@@ -126,7 +135,12 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 
 @media (max-width: 1200px) {
 
-	.section {width:auto}
+	/* layout */
+
+	#container {min-width:100%}
+
+	/* header */
+
 	#header .h_group > div {width:auto;padding:0 10px}
 
 	#gnb {position:static}
@@ -166,12 +180,9 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 
 	#gnb > .box > ul > li.on > a > .gnb_border {display:none}
 
+	/* search */
+
 	.util-menu {display:none}
-	.developers {display:none}
-
-	/* layout */
-
-	#container {min-width:100%}
 
 	/* footer */
 
@@ -179,6 +190,8 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 	.footer-wrap .l_logo {float:none;padding:0 0 10px;text-align:center}
 	.footer-wrap .info {float:none;padding:0 0 10px;text-align:center}
 	.footer-wrap .r_logo {position:relative;top:0;right:0;text-align:center}
+
+	/* */
 
 	.web {display:none}
 	.mobile {display:block}
