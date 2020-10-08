@@ -1,6 +1,6 @@
 str = ''
 str += '<div id="footer">'
-str += '	<div class="footer-wrap clear">'
+str += '	<div class="f_wrap">'
 str += '		<div class="f_both">'
 str += '			<div class="l_logo"><a href="#"><img src="./img/common/footer_logo.png" alt="대전창조경제혁신센터"></a></div>'
 str += '			<div class="info">'
