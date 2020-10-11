@@ -185,7 +185,7 @@ $(function(){
 
 		// info
 
-		$('.g_family').slick({
+		$('.group .inner').slick({
 			infinite: true,
 			slidesToShow: 8,
 			slidesToScroll: 1,
