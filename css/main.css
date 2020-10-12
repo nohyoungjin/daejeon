@@ -46,10 +46,10 @@ SUMMARY :
 
 .visual .slick-dots {position:absolute;bottom:100px;z-index:1000;width:100%;text-align:center}
 .visual .slick-dots li {display:inline-block}
-.visual .slick-dots span {display:block;overflow:hidden;width:10px;height:10px;margin:0 7px 0 0;background:#fff;text-indent:-999px;cursor:pointer;border-radius:5px}
-.visual .slick-dots li.slick-active span {width:22px;height:10px;background:#e64053}
+.visual .slick-dots li button {display:block;overflow:hidden;width:10px;height:10px;margin:0 4px;background:#fff;text-indent:-999px;cursor:pointer;border-radius:5px}
+.visual .slick-dots li.slick-active button {width:22px;height:10px;background:#e64053}
 
-.visual_btn {position:absolute;left:50%;bottom:102px;z-index:10;margin-left:36px}
+.visual_btn {position:absolute;left:50%;bottom:105px;z-index:10;margin-left:42px}
 
 .btn_play {display:block;overflow:hidden;width:15px;height:17px;background:url(../img/common/btn_pause.png) no-repeat center;text-indent:-9999px;cursor:pointer}
 .btn_play.on {background:url(../img/common/btn_play.png) no-repeat center}
