@@ -16,7 +16,7 @@ SUMMARY :
 
 .paginate {overflow:hidden;margin:30px 0 60px;text-align:center} 
 
-.paginate a {display:inline-block;width:33px;height:33px;font-size:13px;line-height:33px;text-align:center;transition:all 0.3s} 
+.paginate a {display:inline-block;width:33px;height:33px;font-size:13px;text-align:center;line-height:33px;transition:all 0.3s} 
 .paginate a.on, 
 .paginate a:hover {background-color:#e4403f;color:#fff} 
 
@@ -47,7 +47,7 @@ SUMMARY :
 .boardList .box01 ul li + li {background:url(../img/content/tel.png) no-repeat 0 2px}
 .boardList .box01 ul li + li + li {background:url(../img/content/email.png) no-repeat 0 5px}
 
-.boardList .noContent {margin:10px 0 0;padding:80px 0;border-top:1px solid #b2b2b2;border-bottom:1px solid #b2b2b2;font-size:20px;text-align:center}
+.boardList .noContent {margin:10px 0 0;padding:80px 0;border:1px solid #b2b2b2;border-width:1px 0;font-size:20px;text-align:center}
 
 /* */
 

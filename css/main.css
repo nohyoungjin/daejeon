@@ -21,7 +21,7 @@ SUMMARY :
 .visual div.d_04 {background:url(../img/main/visual_01.jpg) repeat 50% 50%}
 
 .message {width:1200px;margin:0 auto}
-.message p.tit {margin:240px 0 0 0;font-size:50px;font-weight:300;line-height:60px;color:#fff}  
+.message p.tit {margin:240px 0 0 0;font-size:50px;font-weight:300;color:#fff;line-height:60px}  
 
 .message p.tit {
     opacity: 0;
@@ -35,7 +35,7 @@ SUMMARY :
 }
 
 .visual .slick-slide.slick-active .message p.tit {
-    opacity: 1.0;
+    opacity: 1;
     filter: Alpha(opacity=100);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -46,7 +46,7 @@ SUMMARY :
 
 .visual .slick-dots {position:absolute;bottom:100px;z-index:1000;width:100%;text-align:center}
 .visual .slick-dots li {display:inline-block}
-.visual .slick-dots li button {display:block;overflow:hidden;width:10px;height:10px;margin:0 4px;background:#fff;text-indent:-999px;cursor:pointer;border-radius:5px}
+.visual .slick-dots li button {display:block;overflow:hidden;width:10px;height:10px;margin:0 4px;background:#fff;border-radius:5px;text-indent:-999px;cursor:pointer}
 .visual .slick-dots li.slick-active button {width:22px;height:10px;background:#e64053}
 
 .visual_btn {position:absolute;left:50%;bottom:105px;z-index:10;margin-left:42px}
@@ -62,9 +62,9 @@ SUMMARY :
 
 .group .slick-slide {display:block;position:relative;float:left;max-height:290px;text-align:center}
 
-.group .slick-dots {position:absolute;bottom:10px;margin-left:-36px;z-index:10}
+.group .slick-dots {position:absolute;bottom:10px;z-index:10;margin-left:-36px}
 .group .slick-dots li {float:left}
-.group .slick-dots span {display:block;overflow:hidden;width:12px;height:12px;margin:0 14px 0 0;background:#c9c9c8;text-indent:-999px;cursor:pointer;border-radius:6px}
+.group .slick-dots span {display:block;overflow:hidden;width:12px;height:12px;margin:0 14px 0 0;background:#c9c9c8;border-radius:6px;text-indent:-999px;cursor:pointer}
 .group .slick-dots li.slick-active span {background:#506c87}
 
 .group .slick-arrow {display:block;z-index:100;width:11px;height:16px;text-indent:-9999px;cursor:pointer}
@@ -147,7 +147,7 @@ SUMMARY :
 
 	.widget {width:100%;height:auto;margin:0}
 	.widget .inner {width:100%}
-	.widget .inner ul li {width:20%;height:130px;padding:25px 0;background:none;border-left:0;border-bottom:1px solid #4679a8}
+	.widget .inner ul li {width:20%;height:130px;padding:25px 0;border-left:0;border-bottom:1px solid #4679a8;background:none}
 
 	.col_wrap > .col:first-child {border-top:1px solid #ddd}
 	.col_wrap > .col {width:100%;height:auto;border:1px solid #ddd;border-top:0}

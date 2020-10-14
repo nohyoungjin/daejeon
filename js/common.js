@@ -93,22 +93,22 @@ $(function(){
 					'height': 'auto'
 				});
 			} else {
-				$("body").css({
-					"overflow": "hidden",
-					"height": deviceHeight
+				$('body').css({
+					'overflow': 'hidden',
+					'height': deviceHeight
 				});
 			}
 
 			$(this).next().stop().animate({'right': '0%'}, 300);
-			$("#gnb > .dim").fadeIn();
+			$('#gnb > .dim').fadeIn();
 		});
 
-		$("#gnb > .box").on("click", "> ul > li > a", function() {
-			if ($("body").data("device") == "mobile") {
-				$("#gnb > .box > ul > li > .sub_menu > ul").filter(":not(:animated)").slideUp("fast");
-				$(this).parent().find("> .sub_menu > ul").filter(":not(:animated)").slideToggle();
-				if ($(this).parent().hasClass("current")) {
-					$(this).parent().removeClass("current");
+		$('#gnb > .box').on('click', '> ul > li > a', function() {
+			if ($('body').data('device') == 'mobile') {
+				$('#gnb > .box > ul > li > .sub_menu > ul').filter(':not(:animated)').slideUp('fast');
+				$(this).parent().find('> .sub_menu > ul').filter(':not(:animated)').slideToggle();
+				if ($(this).parent().hasClass('current')) {
+					$(this).parent().removeClass('current');
 					return;
 				}
 				$('#gnb > .box > ul > li').removeClass('current');
@@ -174,7 +174,7 @@ $(function(){
 			var $pauseBtn = $(this);
 			if ($pauseBtn.hasClass('on')) {
 				$('.visual').slick('slickPlay');
-				$(this).text("시작");
+				$(this).text('시작');
 				$pauseBtn.removeClass('on');
 			} else {
 				$('.visual').slick('slickPause');
