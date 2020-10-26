@@ -40,14 +40,14 @@ SUMMARY :
 .boardList .box01 table tr td a:hover,
 .boardList .box01 table tr td a:focus {color:#0f5185}
 
-.boardList .box01 table tr th.list-uid {width:80px}
-.list-user {width:150px}
+.boardList .box01 table tr th.list_uid {width:80px}
+.list_user {width:150px}
 
 .boardList .box01 ul li {padding:0 0 2px 18px;text-align:left}
 .boardList .box01 ul li + li {background:url(../img/content/tel.png) no-repeat 0 2px}
 .boardList .box01 ul li + li + li {background:url(../img/content/email.png) no-repeat 0 5px}
 
-.boardList .noContent {margin:10px 0 0;padding:80px 0;border:1px solid #b2b2b2;border-width:1px 0;font-size:20px;text-align:center}
+.boardList .no_cont {margin:10px 0 0;padding:80px 0;border:1px solid #b2b2b2;border-width:1px 0;font-size:20px;text-align:center}
 
 /* */
 
@@ -65,6 +65,6 @@ SUMMARY :
 
 	/* 게시판 리스트 */
 	
-	.list-user {display:none;width:auto}
+	.list_user {display:none;width:auto}
 
 }
