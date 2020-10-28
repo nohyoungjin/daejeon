@@ -1,31 +1,85 @@
 @charset "utf-8";
 
-@font-face{
-	font-family:"NanumBarunGothic";
-    font-style:normal;
-    font-weight:300;
-	src: url('font/NanumBarunGothicLight.eot');
-  	src: url(font/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'), 
-        url('font/NanumBarunGothicLight.woff') format('woff'),
-        url('font/NanumBarunGothicLight.ttf') format('truetype');
+/* scdream */
+
+@font-face {
+    font-family: 's-core-dream';
+	font-style: normal;
+	font-weight: 300;
+    src: url('../font/scdream1-webfont.woff2') format('woff2'),
+         url('../font/scdream1-webfont.woff') format('woff');
 }
 
-@font-face{
-	font-family:"NanumBarunGothic";
-    font-style:normal;
-    font-weight:400;
-	src: url('font/NanumBarunGothic.eot');
-  	src: url(font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'), 
-        url('font/NanumBarunGothic.woff') format('woff'),
-        url('font/NanumBarunGothic.ttf') format('truetype');
+@font-face {
+	font-family: 's-core-dream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/scdream5-webfont.woff2') format('woff2'),
+         url('../font/scdream5-webfont.woff') format('woff');
 }
 
-@font-face{
-	font-family:"NanumBarunGothic";
-    font-style:normal;
-    font-weight:700;
-	src: url('font/NanumBarunGothicBold.eot');
-  	src: url(font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'), 
-        url('font/NanumBarunGothicBold.woff') format('woff'),
-        url('font/NanumBarunGothicBold.ttf') format('truetype');
+@font-face {
+	font-family: 's-core-dream';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../font/scdream7-webfont.woff2') format('woff2'),
+		 url('../font/scdream7-webfont.woff') format('woff');
 }
+
+/*
+
+@font-face {
+    font-family: 's-core-dream-thin';
+    src: url('scdream1-webfont.woff2') format('woff2'),
+         url('scdream1-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 's-core-dream-extralight';
+    src: url('scdream2-webfont.woff2') format('woff2'),
+         url('scdream2-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 's-core-dream-light';
+    src: url('scdream3-webfont.woff2') format('woff2'),
+         url('scdream3-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 's-core-dream-regular';
+    src: url('../font/scdream4-webfont.woff2') format('woff2'),
+         url('../font/scdream4-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 's-core-dream-medium';
+    src: url('scdream5-webfont.woff2') format('woff2'),
+         url('scdream5-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 's-core-dream-bold';
+    src: url('scdream6-webfont.woff2') format('woff2'),
+         url('scdream6-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 's-core-dream-extrabold';
+    src: url('scdream7-webfont.woff2') format('woff2'),
+         url('scdream7-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 's-core-dream-heavy';
+    src: url('scdream8-webfont.woff2') format('woff2'),
+         url('scdream8-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 's-core-dream-black';
+    src: url('scdream9-webfont.woff2') format('woff2'),
+         url('scdream9-webfont.woff') format('woff');
+}
+
+*/

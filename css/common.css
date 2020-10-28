@@ -16,7 +16,7 @@ SUMMARY :
 /* layout */
 
 html {font-size:62.5%;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%}
-body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Apple Gothic', sans-serif;font-size:13px;font-weight:400;color:#333;line-height:1.5;word-break:keep-all}
+body {font-family:'s-core-dream', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Apple Gothic', sans-serif;font-size:13px;font-weight:400;color:#333;line-height:1.5;word-break:keep-all}
 
 #wrap {width:100%;height:100%}
 #container {width:100%}
@@ -50,7 +50,7 @@ body {font-family:'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '돋움'
 #header .h_group > div:after {display:block;clear:both;content:''}
 #header .h_group > div h1 {overflow:hidden;float:left;padding:25px 0 0}
 
-#gnb {position:relative;float:left;padding:22px 0 0 90px}
+#gnb {position:relative;float:left;padding:22px 0 0 74px}
 #gnb .btn_menu {display:none;overflow:hidden;position:absolute;top:26px;right:20px;width:24px;height:17px;background:url(../img/common/btn_menu.png) no-repeat}
 #gnb .btn_close {display:none;overflow:hidden;position:absolute;top:20px;right:20px;width:26px;height:26px;background:url(../img/common/btn_x.png) no-repeat;background-size:26px}
 
