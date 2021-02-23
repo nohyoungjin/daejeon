@@ -15,9 +15,6 @@ SUMMARY :
 
 /* layout */
 
-html {font-size:62.5%;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%}
-body {font-family:'s-core-dream', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Apple Gothic', sans-serif;font-size:13px;font-weight:400;color:#333;line-height:1.5;word-break:keep-all}
-
 #wrap {width:100%;height:100%}
 #container {width:100%}
 
