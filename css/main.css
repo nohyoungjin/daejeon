@@ -44,12 +44,12 @@ SUMMARY :
 
 .message p + p {font-size:46px;color:#fff}
 
-.visual .slick-dots {position:absolute;bottom:100px;z-index:1000;width:100%;text-align:center}
+.visual .slick-dots {position:absolute;bottom:45px;z-index:1000;width:100%;text-align:center}
 .visual .slick-dots li {display:inline-block}
 .visual .slick-dots li button {display:block;overflow:hidden;width:10px;height:10px;margin:0 4px;background:#fff;border-radius:5px;text-indent:-999px;cursor:pointer}
 .visual .slick-dots li.slick-active button {width:22px;height:10px;background:#e64053}
 
-.visual_btn {position:absolute;left:50%;bottom:105px;z-index:10;margin-left:42px}
+.visual_btn {position:absolute;left:50%;bottom:51px;z-index:10;margin-left:42px}
 
 .btn_play {display:block;overflow:hidden;width:15px;height:17px;background:url(../img/common/btn_pause.png) no-repeat center;text-indent:-9999px;cursor:pointer}
 .btn_play.on {background:url(../img/common/btn_play.png) no-repeat center}
@@ -82,11 +82,13 @@ SUMMARY :
 .widget .inner ul:after {display:block;clear:both;content:''}
 .widget .inner ul li {float:left;width:10%;padding:30px 0;background:url(../img/common/bar.png) 100% 50% no-repeat;text-align:center;cursor:pointer}
 .widget .inner ul li:last-child {background:none}
-.widget .inner ul li a {position:relative;display:block;font-size:14px;color:#d3eaf4;transition:all 1.9s}
-.widget .inner ul li a .txt {display:block;margin-top:10px}
-.widget .inner ul li:hover a {top:-10px;color:#4edaef}
+.widget .inner ul li a {position:relative;display:block;font-size:14px;color:#d3eaf4;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s}
+.widget .inner ul li a .txt {display:block;margin:10px 0 0}
+.widget .inner ul li a:hover i {transform:translate(0, -7px)}
 
 /* */
+
+.widget .inner .ico {transition:all 300ms ease}
 
 .ico.mp_01 {width:39px;height:39px;background-position:0 0}
 .ico.mp_02 {width:39px;height:39px;background-position:-40px 0}
